@@ -1,0 +1,245 @@
+:root {
+  --primary-color: #164b60;
+  --secondary-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home-section {
+  text-align: center;
+  margin: 8% 20% 0 10%;
+}
+
+.home-section__header {
+  text-decoration: none;
+  float: right;
+}
+
+a {
+  cursor: pointer;
+}
+
+.home-section__header a {
+  text-decoration: none;
+  text-align: center;
+  padding: 5.5px;
+  justify-content: center;
+  margin: 12px 40px;
+  padding: 8px 32px;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  padding: 2% 2% 2% 2%;
+  flex-direction: column;
+}
+
+.form .btn_add {
+  text-decoration: none;
+  text-align: center;
+  padding: 5.5px;
+  justify-content: center;
+  margin: 12px 40px;
+  padding: 8px 32px;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.btn_add:hover {
+  color: var(--secondary-color);
+  transition: 0.4s ease-in-out;
+}
+
+/*
+.card-group {
+  display: flex;
+  margin-top: 2%;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 1em 0;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  padding: .6em 1em .6em .6em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  border: solid 1px black;
+}
+.card img{
+  height: 120px;
+  width: 120px;
+  border: 1px solid;
+  border-radius: 100px;
+  margin: 0% 0% 0% 5%;
+}
+.card-logo {
+  min-width: 80px;
+  margin: 0 .6em 0 0 ;
+  border: solid 1px grey;
+}
+*/
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+}
+
+table img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+}
+
+.add {
+  background: var(--secondary-color);
+}
+.user-list {
+  justify-content: space-between;
+  margin: 5%;
+  list-style: none;
+}
+.user-list li {
+  justify-content: space-evenly;
+}
+.no-users {
+  text-align: center;
+  font-size: x-large;
+  padding: 12px 40px;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  justify-content: end;
+  margin: 2%;
+  align-items: center;
+}
+
+.backButton {
+  display: flex;
+  align-items: end;
+  margin-top: 5%;
+  padding-left: 20%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  border-radius: 5% 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  pointer: cursor;
+  color: var(--primary-color);
+}
+
+.form img {
+  height: 120px;
+  width: 120px;
+  border: 1px solid;
+  border-radius: 100px;
+  margin: 0% 0% 0% 5%;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  gap: 1%;/* Should be removed. Only for demonstration */
+}
+.row img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+.right {
+  width: 10%;
+  margin-top: 2%;
+  justify-content: space-evenly;
+}
+.left {
+  width: 10%;
+}
+.middle {
+  width: 30%;
+  margin-top: 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+input[type='file'] {
+  color: transparent !important;
+  content: '+';
+  display: none;
+}
+
+label {
+  margin: -20%;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
